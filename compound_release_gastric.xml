@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <notes>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+     <p>Exported by VCell 7.3</p>
+  </body>
+  </notes>
+  <model areaUnits="Unit_dm2" extentUnits="Unit_umol" id="compound_release_gastric_gastric_digestion" lengthUnits="Unit_dm" name="compound_release_gastric_gastric digestion" substanceUnits="Unit_umol" timeUnits="Unit_s" volumeUnits="Unit_l">
+    <listOfUnitDefinitions>
+      <unitDefinition id="Unit_umol">
+        <listOfUnits>
+          <unit exponent="1" kind="mole" multiplier="1" scale="-6"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_l">
+        <listOfUnits>
+          <unit exponent="1" kind="litre" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_dm2">
+        <listOfUnits>
+          <unit exponent="2" kind="metre" multiplier="1" scale="-1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_dm">
+        <listOfUnits>
+          <unit exponent="1" kind="metre" multiplier="1" scale="-1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_s">
+        <listOfUnits>
+          <unit exponent="1" kind="second" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_s_1">
+        <listOfUnits>
+          <unit exponent="-1" kind="second" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_K">
+        <listOfUnits>
+          <unit exponent="1" kind="kelvin" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit__1">
+        <listOfUnits>
+          <unit exponent="1" kind="dimensionless" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_C_mol_1">
+        <listOfUnits>
+          <unit exponent="1" kind="coulomb" multiplier="1" scale="0"/>
+          <unit exponent="-1" kind="mole" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_C_nmol_1">
+        <listOfUnits>
+          <unit exponent="1" kind="coulomb" multiplier="1" scale="0"/>
+          <unit exponent="-1" kind="mole" multiplier="1" scale="-9"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_molecules_pmol_1">
+        <listOfUnits>
+          <unit exponent="1" kind="item" multiplier="1" scale="0"/>
+          <unit exponent="-1" kind="mole" multiplier="1" scale="-12"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit__1000000000">
+        <listOfUnits>
+          <unit exponent="1" kind="dimensionless" multiplier="1000000000" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_mV_C_K_1_mol_1">
+        <listOfUnits>
+          <unit exponent="1" kind="volt" multiplier="1" scale="-3"/>
+          <unit exponent="1" kind="coulomb" multiplier="1" scale="0"/>
+          <unit exponent="-1" kind="kelvin" multiplier="1" scale="0"/>
+          <unit exponent="-1" kind="mole" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_mV_V_1">
+        <listOfUnits>
+          <unit exponent="1" kind="dimensionless" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_uM_um3_molecules_1">
+        <listOfUnits>
+          <unit exponent="1" kind="mole" multiplier="1" scale="-6"/>
+          <unit exponent="-1" kind="litre" multiplier="1" scale="0"/>
+          <unit exponent="3" kind="metre" multiplier="1" scale="-6"/>
+          <unit exponent="-1" kind="item" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_pA_dm_2">
+        <listOfUnits>
+          <unit exponent="1" kind="ampere" multiplier="1" scale="-12"/>
+          <unit exponent="-2" kind="metre" multiplier="1" scale="-1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="Unit_dm_s_1">
+        <listOfUnits>
+          <unit exponent="1" kind="metre" multiplier="1" scale="-1"/>
+          <unit exponent="-1" kind="second" multiplier="1" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment constant="true" id="EC" name="EC" size="2.0000000000000002E-11" spatialDimensions="3" units="Unit_l"/>
+      <compartment constant="true" id="Cell" name="Cell" size="2.5E-14" spatialDimensions="3" units="Unit_l"/>
+      <compartment constant="true" id="PM" name="PM" size="4.196E-9" spatialDimensions="2"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="Pr_comp" initialConcentration="8500" name="Pr_comp" substanceUnits="Unit_umol"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="Lp_comp" initialConcentration="6960" name="Lp_comp" substanceUnits="Unit_umol"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="Comp_in" initialConcentration="0" name="Comp_in" substanceUnits="Unit_umol"/>
+      <species boundaryCondition="false" compartment="EC" constant="false" hasOnlySubstanceUnits="false" id="Comp_out" initialConcentration="0" name="Comp_out" substanceUnits="Unit_umol"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter constant="true" id="Kf_pr_g" name="Kf_pr_g" units="Unit_s_1" value="0.0005"/>
+      <parameter constant="true" id="Kf_lp_g" name="Kf_lp_g" units="Unit_s_1" value="0.0005"/>
+      <parameter constant="true" id="Kr_g" name="Kr_g" units="Unit_s_1" value="0.1"/>
+      <parameter constant="true" id="Voltage_PM" value="0"/>
+      <parameter constant="true" id="_F_" units="Unit_C_mol_1" value="9.64853321E4"/>
+      <parameter constant="false" id="Kf_pr_dissoc" units="Unit_s_1"/>
+      <parameter constant="false" id="Kr_pr_dissoc" units="Unit_s_1"/>
+      <parameter constant="false" id="Kf_Lp_dissoc" units="Unit_s_1"/>
+      <parameter constant="false" id="Kr_Lp_dissoc" units="Unit_s_1"/>
+      <parameter constant="true" id="P_flux" units="Unit_dm_s_1" value="0.01"/>
+    </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="Kf_pr_dissoc">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <ci> Kf_pr_g </ci>
+        </math>
+            </assignmentRule>
+      <assignmentRule variable="Kr_pr_dissoc">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <ci> Kr_g </ci>
+        </math>
+            </assignmentRule>
+      <assignmentRule variable="Kf_Lp_dissoc">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <ci> Kf_lp_g </ci>
+        </math>
+            </assignmentRule>
+      <assignmentRule variable="Kr_Lp_dissoc">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <ci> Kr_g </ci>
+        </math>
+            </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction compartment="Cell" id="pr_dissoc" name="pr_dissoc" reversible="true">
+        <listOfReactants>
+          <speciesReference constant="true" id="pr_dissoc_Pr_compr" species="Pr_comp" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="pr_dissoc_Comp_inp" species="Comp_in" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Kf_pr_dissoc </ci>
+                  <ci> Pr_comp </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <times/>
+                    <ci> Kr_pr_dissoc </ci>
+                    <ci> Comp_in </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <ci> Cell </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction compartment="Cell" id="Lp_dissoc" name="Lp_dissoc" reversible="true">
+        <listOfReactants>
+          <speciesReference constant="true" id="Lp_dissoc_Lp_compr" species="Lp_comp" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="Lp_dissoc_Comp_inp" species="Comp_in" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Kf_Lp_dissoc </ci>
+                  <ci> Lp_comp </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <times/>
+                    <ci> Kr_Lp_dissoc </ci>
+                    <ci> Comp_in </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <ci> Cell </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction compartment="PM" id="flux" name="flux" reversible="true">
+        <annotation>
+          <vcell:ReactionAttributes xmlns:vcell="http://sourceforge.net/projects/vcell" vcell:fluxReaction="true"/>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="true" id="flux_Comp_inr" species="Comp_in" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="flux_Comp_outp" species="Comp_out" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci> P_flux </ci>
+                <apply>
+                  <plus/>
+                  <ci> Comp_in </ci>
+                  <apply>
+                    <minus/>
+                    <ci> Comp_out </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <ci> PM </ci>
+            </apply>
+          </math>
+                  <listOfLocalParameters>
+            <localParameter id="I" units="Unit_pA_dm_2" value="0"/>
+            <localParameter id="carrierValence" units="Unit__1" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
